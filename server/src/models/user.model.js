@@ -12,11 +12,11 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    firstname: {
+    firstName: {
       type: String,
       required: true,
     },
-    lastname: {
+    lastName: {
       type: String,
       required: true,
     },
@@ -59,4 +59,5 @@ const userSchema = new mongoose.Schema(
 );
 
 const User = mongoose.model("User", userSchema);
+
 export default User;
