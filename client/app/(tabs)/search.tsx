@@ -1,3 +1,4 @@
+import { TRENDING_TOPICS } from "@/data/topics";
 import { Feather } from "@expo/vector-icons";
 import { useState } from "react";
 import {
@@ -9,13 +10,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const TRENDING_TOPICS = [
-  { topic: "#ReactNative", tweets: "125K" },
-  { topic: "#TypeScript", tweets: "89K" },
-  { topic: "#WebDevelopment", tweets: "234K" },
-  { topic: "#AI", tweets: "567K" },
-  { topic: "#TechNews", tweets: "98K" },
-];
+
 
 const SearchScreen = () => {
   const [topics, setTopics] = useState(TRENDING_TOPICS);
