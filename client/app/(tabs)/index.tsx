@@ -5,6 +5,7 @@ import SignOutButton from "@/components/signout";
 import { useUserSync } from "@/hooks/useUserSync";
 import { Ionicons } from "@expo/vector-icons";
 import PostComposer from "@/components/post-composer";
+import PostList from "@/components/posts-list";
 
 const Home = () => {
   useUserSync();
@@ -21,6 +22,7 @@ const Home = () => {
         contentContainerStyle={{ paddingBottom: 80 }}
       >
         <PostComposer />
+        <PostList/>
       </ScrollView>
     </SafeAreaView>
   );
